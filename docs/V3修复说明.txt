@@ -1,0 +1,7 @@
+V3 修复重点
+1. 修复 GUI App 与终端 PATH 不一致导致的 yt-dlp“已安装但读取失败”。
+2. yt-dlp 优先锁定真实绝对路径；找不到时再回退 python3 -m yt_dlp。
+3. 视频信息改为 JSON 读取，避免字段缺失导致四行信息错位。
+4. 读取失败时把 yt-dlp 的真实报错写入“运行日志”，不再只显示一句笼统失败。
+5. 所有下载/更新任务显式补齐 Apple Silicon Homebrew、Intel Homebrew、Python 常用 PATH。
+6. 全新 Rock 专用 App 图标。
