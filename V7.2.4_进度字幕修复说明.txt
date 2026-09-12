@@ -1,0 +1,10 @@
+Rock专用YouTube下载器 V7.2.4
+
+本版本本地源代码已修复：
+1. 修复 yt-dlp 流式输出被拆包导致的实时进度解析问题，增加半行缓存。
+2. 实时显示进度、速度、剩余时间的解析机制保留。
+3. 字幕继续采用主下载 + 下载结束后补偿下载双保险。
+4. 字幕仅请求中文 zh.* 和英文 en.*。
+5. 如果日志出现 Operation not permitted，并指向 Safari Cookies.binarycookies，这是 macOS Safari Cookie 的 TCC 权限限制，代码不能绕过，需要给当前 App 授予“完全磁盘访问权限”。
+
+完整 V7.2.4 源代码包已在本次交付文件中。
